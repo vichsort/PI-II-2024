@@ -5,9 +5,9 @@
 <script>
 
 export default {
-  name: 'App',
+  name: 'linhaTempo',
   components: {
-
+    
   }
 }
 </script>
