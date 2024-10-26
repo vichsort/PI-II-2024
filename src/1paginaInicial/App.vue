@@ -2,12 +2,12 @@
   <div>
     <header>
       <nav>
-        <a href="#" class="logo">
+        <a href="../assets/nave-logo.png" class="logo">
           <img src="" alt="Ícone de um foguete" />
         </a>
         <ul>
-          <li><a href="#" class="active">Página Principal</a></li>
-          <li><a href="#">Linha do Tempo</a></li>
+          <li><a href="home" class="active">Página Principal</a></li>
+          <li><a href="pagina2">Linha do Tempo</a></li>
           <li><a href="#">História</a></li>
           <li><a href="#">Fórum</a></li>
           <li><a href="#">Artigo</a></li>
@@ -25,14 +25,18 @@
     </header>
 
     <section class="intro">
-      <h3>BEM-VINDO AO <span>NOSSO SITE</span></h3>
+      <h3>BEM-VINDO AO <span><br> NOSSO SITE</span></h3>
       <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <img src="" alt="Imagem de uma das Sondas" />
+      <img src="../assets/Voyager1.jpg">
     </section>
 
     <section class="topics">
       <div>VOYAGERS: MISSÃO AO DESCONHECIDO</div>
-      <div>ALorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+      <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui
+      lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci
+      elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur
+      lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut
+      nec tortor. Curabitur vel erat quis diam semper.</p>
       <img src="" alt="Imagem de Júpiter" />
       <img src="" alt="Imagem de uma das sondas" />
       <img src="" alt="Imagem do Disco de Ouro" />
@@ -50,7 +54,8 @@ export default {
 <style scoped>
 header {
   height: 100vh;
-  background: url();
+  background: url("../assets/fundo-header.png");
+  background-size: cover;
 }
 
 nav {
@@ -97,6 +102,15 @@ nav a.active {
   bottom: 10vh;
 }
 
+.hero h1 {
+  color: #F0F0FA;
+  font-size: 47px;
+  margin-top: 110px;
+  margin-left: 130px;
+  overflow: hidden;
+  font-family: "Onest", sans-serif;
+}
+
 .hero button {
   border-radius: 40px;
   padding: 20px 40px;
@@ -107,6 +121,7 @@ nav a.active {
 
 .hero span {
   text-decoration: solid underline #C898EC 4px;
+  border-radius: 20%;
 }
 
 .hero p {
@@ -115,6 +130,11 @@ nav a.active {
 
 .intro {
   background-color: #080E22;
+  width: 100%;
+  padding-bottom: 90px;
+  display: flex; /* Flexbox para controle mais preciso */
+  flex-direction: column; /* Coloca o h1 em uma coluna */
+  align-items: flex-start; /* Mantém o alinhamento inicial */
 }
 
 .intro p {
@@ -127,20 +147,24 @@ nav a.active {
 }
 
 .intro h3 {
-  color: white;
-  margin-left: 45px;
-  font-size: 50px ;
+  color: #F0F0FA;
+  font-size: 47px;
+  margin-top: 110px;
+  margin-left: 130px;
+  overflow: hidden;
+  font-family: "Onest", sans-serif;
 }
 
 .intro span {
   color: #2552EA;
-  text-align: end;
 }
 
 .intro img {
-  padding-right: 10px;
-  height: 497px;
-  width: 431px;
-  border-radius: 15%;
+  width: 480px; 
+  height: auto;
+  margin-left: 830px;
+  margin-top: -360px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 </style>
