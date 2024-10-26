@@ -1,9 +1,8 @@
 <template>
-  <div>
     <header>
       <nav>
         <a href="../assets/nave-logo.png" class="logo">
-          <img src="" alt="Ícone de um foguete" />
+          <img src="../assets/nave-logo.png" alt="Ícone de um foguete" />
         </a>
         <ul>
           <li><a href="home" class="active">Página Principal</a></li>
@@ -26,22 +25,28 @@
 
     <section class="intro">
       <h3>BEM-VINDO AO <span><br> NOSSO SITE</span></h3>
-      <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui
+      lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci
+      elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur
+      lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut
+      nec tortor. Curabitur vel erat quis diam semper</p>
       <img src="../assets/Voyager1.jpg">
     </section>
 
     <section class="topics">
-      <div>VOYAGERS: MISSÃO AO DESCONHECIDO</div>
+      <h1>VOYAGERS: MISSÃO AO<span><br> DESCONHECIDO</span></h1>
       <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui
       lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci
       elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur
       lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut
       nec tortor. Curabitur vel erat quis diam semper.</p>
-      <img src="" alt="Imagem de Júpiter" />
-      <img src="" alt="Imagem de uma das sondas" />
-      <img src="" alt="Imagem do Disco de Ouro" />
+    <div>
+      <img class='imagem1' src="../assets/Jupiter.jpg"/>
+      <img class="imagem2" src="../assets/voyager2.png"/>
+      <img class="imagem3" src="../assets/DiscoOuro.jpg"/>
+    </div>
     </section>
-  </div>
+
 </template>
 
 <script>
@@ -49,6 +54,7 @@ export default {
   name: 'App',
   components: {}
 };
+
 </script>
 
 <style scoped>
@@ -85,6 +91,7 @@ nav ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
+  font-family: "Onest", sans-serif;
 }
 
 nav ul li a:hover {
@@ -104,14 +111,13 @@ nav a.active {
 
 .hero h1 {
   color: #F0F0FA;
-  font-size: 47px;
-  margin-top: 110px;
-  margin-left: 130px;
-  overflow: hidden;
+  font-size: 80px;
+  margin-top: 130px;
+  margin-right: 450px;
   font-family: "Onest", sans-serif;
 }
 
-.hero button {
+.hero button{
   border-radius: 40px;
   padding: 20px 40px;
   background-color: transparent;
@@ -120,30 +126,35 @@ nav a.active {
 }
 
 .hero span {
-  text-decoration: solid underline #C898EC 4px;
-  border-radius: 20%;
+  text-decoration: solid underline #C898EC 5px;
+  border-radius: 10px; 
 }
 
 .hero p {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+  color: #fff;
+  font-family: "Onest", sans-serif;
+  
 }
 
 .intro {
   background-color: #080E22;
   width: 100%;
   padding-bottom: 90px;
-  display: flex; /* Flexbox para controle mais preciso */
-  flex-direction: column; /* Coloca o h1 em uma coluna */
-  align-items: flex-start; /* Mantém o alinhamento inicial */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .intro p {
-  color: white;
-  font-size: 1.5em;
-  padding: 10px;
-  width: 70%;
-  margin: 20px auto;
-  text-align: left;
+  color: #F0F0FA;
+  font-size: 21px;
+  margin-top: 20px;
+  margin-left: 130px;
+  max-width: 600px;
+  overflow: hidden;
 }
 
 .intro h3 {
@@ -163,8 +174,68 @@ nav a.active {
   width: 480px; 
   height: auto;
   margin-left: 830px;
-  margin-top: -360px;
+  margin-top: -390px;
   overflow: hidden;
   border-radius: 15px;
+}
+
+.topics {
+  background-color: #111C41;
+  width: 100%;
+  padding-bottom: 90px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.topics h1 {
+  color: #F0F0FA;
+  font-size: 47px;
+  margin-top: 35px;
+  margin-left: 380px;
+  overflow: hidden;
+  text-align: center;
+}
+.topics p {
+  color: #F0F0FA;
+  font-size: 21px;
+  margin-top: 60px;
+  margin-left: 70px;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.topics span {
+  text-decoration: underline;
+  text-decoration-color: #C898EC;
+  text-decoration-thickness: 6px;
+  border-radius: 15%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+
+.div{
+    display: flex;
+    flex-direction: row;
+}
+
+.imagem1{
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 450px;
+    height: 600px;
+}
+.imagem2{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 270px;
+    height: 600px;
+}
+.imagem3{
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 270px;
+    height: 600px
 }
 </style>
