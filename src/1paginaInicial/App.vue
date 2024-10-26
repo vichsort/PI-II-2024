@@ -7,10 +7,10 @@
         <ul>
           <li><a href="home" class="active">Página Principal</a></li>
           <li><a href="pagina2">Linha do Tempo</a></li>
-          <li><a href="#">História</a></li>
-          <li><a href="#">Fórum</a></li>
-          <li><a href="#">Artigo</a></li>
-          <li><a href="#">Jogo</a></li>
+          <li><a href="pagina3">História</a></li>
+          <li><a href="pagina4">Fórum</a></li>
+          <li><a href="pagina5">Artigo</a></li>
+          <li><a href="pagina6">Jogo</a></li>
         </ul>
         <a href="#" class="profile">
           <img src="" alt="Ícone de um perfil" />
@@ -64,6 +64,11 @@ header {
   background-size: cover;
 }
 
+.logo img,
+.profile img {
+  height: 40px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -71,36 +76,32 @@ nav {
   padding: 10px 20px;
 }
 
-.logo img,
-.profile img {
-  height: 40px;
-}
 
-nav ul {
+ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-nav ul li {
+ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
+ul li a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-family: "Onest", sans-serif;
 }
 
-nav ul li a:hover {
-  color: #C898EC;
-}
-
-nav a.active {
+ul li a.active {
   border-bottom: 3px solid #C898EC;
   color: white;
+}
+
+nav ul li a:hover {
+  color: #C898EC;
 }
 
 .hero {
