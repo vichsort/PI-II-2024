@@ -21,6 +21,7 @@
         <p>Descubra um dos maiores projetos humanos para a exploração espacial</p>
         <button>Saiba Mais</button>
       </section>
+      <div class="linha" ></div>
     </header>
 </template>
 
@@ -117,4 +118,13 @@ nav ul li a:hover {
   
 }
 
+.linha {
+    position: absolute;
+    width: 2px; /* Espessura da linha */
+    height: 100vh; /* Altura total da tela */
+    background-color: black;
+    top: 0;
+    left: 50%; /* Centraliza horizontalmente */
+    transform-origin: top; /* Define o ponto de origem da transformação */
+}
 </style>
