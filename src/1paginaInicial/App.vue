@@ -44,7 +44,12 @@
       <img class='imagem1' src="../assets/Jupiter.jpg"/>
       <img class="imagem2" src="../assets/voyager2.png"/>
       <img class="imagem3" src="../assets/DiscoOuro.jpg"/>
+      <div1> 
+        <h3>A Grande Conjunção</h3>
+        <p>ALorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis, arcu nec pretium lacinia, dolor dui lobortis nunc, sed condimentum libero orci ut odio. In hac habitasse platea dictumst. Suspendisse eget orci elementum, porttitor turpis sed, ultrices dui. Vestibulum consequat augue ac mi feugiat dictum. Cras ac efficitur lorem, in ultricies tellus. Duis accumsan nulla eu pretium mattis. Vestibulum ac sem bibendum dui ornare cursus ut nec tortor. Curabitur vel erat quis diam semper</p>
+      </div1>
     </div>
+
     </section>
 
 </template>
@@ -152,8 +157,8 @@ nav ul li a:hover {
 .intro p {
   color: #F0F0FA;
   font-size: 21px;
-  margin-top: 20px;
-  margin-left: 130px;
+  margin-top: 2%;
+  margin-left: 10%;
   max-width: 600px;
   overflow: hidden;
 }
@@ -161,8 +166,8 @@ nav ul li a:hover {
 .intro h3 {
   color: #F0F0FA;
   font-size: 47px;
-  margin-top: 110px;
-  margin-left: 130px;
+  margin-top: 6%;
+  margin-left: 10%;
   overflow: hidden;
   font-family: "Onest", sans-serif;
 }
@@ -172,12 +177,13 @@ nav ul li a:hover {
 }
 
 .intro img {
-  width: 480px; 
+  width: 40%;
   height: auto;
-  margin-left: 830px;
-  margin-top: -390px;
-  overflow: hidden;
+  margin-left: 75%;
+  margin-top: -30%;
   border-radius: 15px;
+  object-fit: contain;
+  transform: translateX(-50%);
 }
 
 .topics {
@@ -191,19 +197,32 @@ nav ul li a:hover {
 
 .topics h1 {
   color: #F0F0FA;
-  font-size: 47px;
-  margin-top: 35px;
-  margin-left: 380px;
-  overflow: hidden;
+  font-size: 2.9375rem;
+  margin: 35px auto;
+  max-width: 800px;
+  line-height: 1.2; 
   text-align: center;
+  overflow: hidden; 
 }
+
+.topics h3 {
+  color:#F0F0FA;
+  font-size: 40px;
+  font-family: 'Onest', sans-serif;
+  margin-left: 10%;
+  margin-top: 5%;
+}   
+
 .topics p {
   color: #F0F0FA;
-  font-size: 21px;
-  margin-top: 60px;
-  margin-left: 70px;
-  max-width: 1200px;
+  font-family: 'Onest', sans-serif;
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  margin: 0 10%;
+  padding: 0;
+  max-width: auto;
   overflow: hidden;
+  text-align: justify;
 }
 
 .topics span {
@@ -213,7 +232,7 @@ nav ul li a:hover {
   border-radius: 15%;
   text-align: center;
   font-weight: bold;
-  color: white;
+  color: #C898EC;
 }
 
 .div{
