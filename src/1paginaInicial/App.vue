@@ -63,6 +63,10 @@ export default {
 </script>
 
 <style scoped>
+* {
+  margin: 0;
+  text-decoration: none;
+}
 header {
   height: 100vh;
   background: url("../assets/fundo-header.png");
