@@ -5,7 +5,7 @@
 
 header {
     height: 100vh;
-    background: url("../assets/fundo-header.png");
+    background: url('/assets/fundo-header.png');
     background-size: cover;
 }
 
@@ -33,9 +33,9 @@ ul li {
 }
 
 ul li a {
+    margin: 0;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-weight: bold;
     font-family: "Onest", sans-serif;
 }
 
@@ -57,17 +57,18 @@ nav ul li a:hover {
 .hero h1 {
     color: #F0F0FA;
     font-size: 80px;
-    margin-top: 130px;
-    margin-right: 450px;
+    margin-top: 10%;
+    margin-right: 30%;
     font-family: "Onest", sans-serif;
 }
 
 .hero button {
-    border-radius: 40px;
-    padding: 20px 40px;
+    border-radius: 2.5rem;
+    padding: 1.25rem 2.5rem;
     background-color: transparent;
     color: white;
-    border: 2px solid white;
+    border: 0.125rem solid white;
+    margin-top: 10%;
 }
 
 .hero span {
@@ -76,9 +77,17 @@ nav ul li a:hover {
 }
 
 .hero p {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
     color: #fff;
     font-family: "Onest", sans-serif;
+    margin-top: 10%;
+    margin-right: 30%; 
+}
+
+footer{
+    background-color: black;
+    height: 30vh;
+    color: whitesmoke;
 }
