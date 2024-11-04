@@ -37,7 +37,7 @@ module.exports = {
       entry: 'src/5artigoSondas/main.js',
       template: 'public/artigo.html',
       filename: 'artigo.html',
-      title: 'artigo Page',
+      title: 'BeyondGalaxy - Artigo',
       chunks: ['chunk-vendors', 'chunk-common', 'artigo']
     },
     jogo: {

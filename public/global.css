@@ -3,6 +3,10 @@
     text-decoration: none;
 }
 
+html{
+    background-color: #111C41;
+}
+
 header {
     height: 100vh;
     background: url('/assets/fundo-header.png');
