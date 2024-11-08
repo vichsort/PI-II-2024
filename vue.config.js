@@ -9,7 +9,7 @@ module.exports = {
       entry: 'src/1paginaInicial/main.js',
       template: 'public/index.html',
       filename: 'index.html',
-      title: 'Index Page',
+      title: 'Página Inicial',
       chunks: ['chunk-vendors', 'chunk-common', 'index']
     },
     linha: {
